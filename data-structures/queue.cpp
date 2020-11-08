@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-#define SIZE 10
+#define SIZE 5
 
 // Creating a queue
 class Queue
@@ -62,7 +62,7 @@ public:
     else
     {
       element = items[front];
-      if (front >= rear)
+      if (front == rear)
       {
         front = -1;
         rear = -1;
